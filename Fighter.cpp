@@ -6,26 +6,26 @@ Fighter::Fighter(int heal, string nam)
 	name = nam;
 	cout << nam << " enters the ring!\n";
 }
-void Fighter::swing(Fighter* loser, int hit)
+void Fighter::swing(Fighter &loser, int hit)
 {
 	int damage = hit;
-	int curHealth = (*loser).health;
-	(*loser).health = curHealth - damage;
+	int curHealth = loser.health;
+	loser.health = curHealth - damage;
 }
-void Fighter::bigSwing(Fighter* loser, int hit)
+void Fighter::bigSwing(Fighter &loser, int hit)
 {
 	int damage = (hit * 2);
-	int curHealth = (*loser).health;
-	(*loser).health = curHealth - damage;
+	int curHealth = loser.health;
+	loser.health = curHealth - damage;
 }
-void Fighter::playerBigSwing(Fighter* loser, int hit)
+void Fighter::playerBigSwing(Fighter &loser, int hit)
 {
 	int damage = (hit * 3);
-	int curHealth = (*loser).health;
-	(*loser).health = curHealth - damage;
+	int curHealth = loser.health;
+	loser.health = curHealth - damage;
 }
-void Fighter::rest(Fighter* healing)
+void Fighter::rest(Fighter &healing)
 {
-	int curHealth = (*healing).health;
-	(*healing).health = curHealth + 20;
+	int curHealth = healing.health;
+	healing.health = curHealth + 20;
 }
