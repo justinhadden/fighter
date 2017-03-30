@@ -1,3 +1,8 @@
+/*
+	Justin Hadden
+	12-3-2016
+*/
+
 #include "Fighter.h"
 
 Fighter::Fighter(int heal, string nam)
