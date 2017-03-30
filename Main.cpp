@@ -1,3 +1,8 @@
+/*
+	Justin Hadden
+	12-3-2016
+*/
+
 #include<iostream>
 #include<string>
 #include<vector>
