@@ -5,8 +5,6 @@
 #include<ctime>
 #include "Fighter.h"
 
-// -[------->+<]>+.-[----->+<]>.--.+.-----------.+++++.-[->+++++<]>-.---[->++++<]>-.++.+[->+++<]>+.++++++++.++++++++.
-
 using namespace std;
 
 void computerTurn(Fighter &fighterOne, Fighter &fighterTwo, int rand)
